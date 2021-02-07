@@ -1,0 +1,33 @@
+// TO DO
+// sort posts: change from id to date
+// format date
+// mobile
+// add next and previous post athe bottom of post
+
+// COLORS
+$black: #202020;
+$white: #FFFFFF;
+$light-brown: #D8C3A4;
+$dark-brown: #8E8D89;
+$red: #E88073;
+$beige: #EAE8DC;
+
+// FONT SIZES
+$xs: 13.33px;
+$s: 16px;
+$m: 19.2px;
+$l: 23.04px;
+$xl: 27.65px;
+
+// FONTS
+@font-face {
+    font-family: 'Moon';
+    src: url('../assets/Moon\ Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Work';
+    src: url('../assets/WorkSans-VariableFont_wght.ttf') format('truetype');
+}
+
+

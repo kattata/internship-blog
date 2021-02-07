@@ -1,0 +1,44 @@
+@import 'variables';
+@import 'postlist';
+@import 'postpage';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $beige;
+    background-size: 20px 20px;
+    background-image:  repeating-linear-gradient(0deg, $light-brown, $light-brown 1px, $beige 1px, $beige);    
+    font-family: 'Work';
+}
+
+p {
+    font-size: $s;
+}
+
+// NAVBAR
+.navbar {
+    background-color: $light-brown;
+    color: $black;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    & h2 {
+        font-family: 'Moon';
+        font-size: $m;
+    }
+    & p {
+        font-size: $xs;
+    }
+    & a {
+        text-decoration: none;
+        color: $black;
+        text-align: center;
+    }
+}
+
