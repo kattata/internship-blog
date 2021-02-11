@@ -8,6 +8,7 @@ const PostPage = () => {
     const { data, isLoading } = useFetch('http://blog.kasialaniecka.com/wp-json/wp/v2/posts/' + id)
     return (
         <div className="post-page">
+                    {isLoading && <p className="loading">Post is coming!</p>}
             {data && (
                 <article>
                     <div className="intro">

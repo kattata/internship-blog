@@ -2,9 +2,6 @@ import PostPreview from "./PostPreview";
 
 const PostList = ({ posts }) => {
 
-    console.log(posts);
-
-
     return (
         <div className="post-list">
             {posts

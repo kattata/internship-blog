@@ -8,6 +8,7 @@ function App() {
 
   return (
     <div className="App">
+      {isLoading && <p className="loading">Posts are coming!</p>}
       {posts && <PostList posts={posts} />}
     </div>
   );

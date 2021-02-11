@@ -3,16 +3,18 @@ import { useEffect, useState } from "react";
 const useFetch = (url) => {
     const [data, setData] = useState(null);
     const [isLoading, setIsLoading] = useState(true);
+    
 
     useEffect(() => {
-        fetch(url)
+            
+            fetch(url)
             .then(res => res.json())
             .then(data => {
                 setData(data);
                 setIsLoading(false);
             })
-    }, [url]);
-
+        }, [url]);
+        
     return { data, isLoading };
 }
 
