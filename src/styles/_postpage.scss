@@ -1,5 +1,9 @@
 .post-page {
   padding: 0 10px;
+  & a {
+    color: $black;
+    text-decoration: none;
+  }
 }
 
 .post-page article {
