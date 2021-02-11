@@ -1,37 +1,37 @@
 .post-page {
-    padding: 0 10px;
+  padding: 0 10px;
 }
 
-.post-page article{
-    max-width: 1000px;
-    margin: 10px auto;
-    background-color: $beige;
-    padding: 40px;
-    border: 1px solid $light-brown;
-    & img {
-        width: 100%;
-        margin: 20px 0;
-    }
-    & h1 {
-        font-family: 'Moon';
-        font-size: $xl;
-    }
-    & h2 {
-        font-family: 'Moon';
-        font-size: $m;
-        margin: 20px 0 10px;
-    }
+.post-page article {
+  max-width: 1000px;
+  margin: 10px auto;
+  background-color: $beige;
+  padding: 40px;
+  border: 1px solid $light-brown;
+  & img {
+    width: 100%;
+    margin: 20px 0;
+  }
+  & h1 {
+    font-family: "Moon";
+    font-size: $xl;
+  }
+  & h2 {
+    font-family: "Moon";
+    font-size: $m;
+    margin: 20px 0 10px;
+  }
+  @include phone {
+    padding: 20px;
+  }
 }
 
 .intro {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
-@media (max-width: 620px) {
-    .intro {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  @include tablet {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
