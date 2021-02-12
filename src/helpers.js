@@ -17,3 +17,4 @@ export function formatDateToCalculate(date) {
     const newDate = new Date(year, day, month);
     console.log(newDate);
 }
+
