@@ -16,7 +16,7 @@
     @include post-preview-button($red);
     cursor: pointer;
     &:hover {
-      background-color: $white;
+      background-color: $beige;
       border: 1px solid $red;
       color: $red;
     }
