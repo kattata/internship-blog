@@ -6,7 +6,6 @@ const PostPage = () => {
 
     const { id } = useParams();
     const { data:post, isLoading } = useFetch('http://blog.kasialaniecka.com/wp-json/wp/v2/posts/' + id);
-    const { data:posts } = useFetch('http://blog.kasialaniecka.com/wp-json/wp/v2/posts');
 
     return (
         <div className="post-page">
