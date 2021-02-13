@@ -5,7 +5,7 @@ import {formatDateToDisplay } from '../helpers';
 const PostPage = () => {
 
     const { id } = useParams();
-    const { data:post, isLoading } = useFetch('http://blog.kasialaniecka.com/wp-json/wp/v2/posts/' + id);
+    const { data:post, isLoading } = useFetch('https://blog.kasialaniecka.com/wp-json/wp/v2/posts/' + id);
 
     return (
         <div className="post-page">

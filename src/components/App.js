@@ -6,7 +6,7 @@ import Severus from './Severus';
 
 function App() {
 
-  const { data: posts, isLoading } = useFetch('http://blog.kasialaniecka.com/wp-json/wp/v2/posts');
+  const { data: posts, isLoading } = useFetch('https://blog.kasialaniecka.com/wp-json/wp/v2/posts');
   const [isOpen, setIsOpen] = useState(false);
 
   // secret video
