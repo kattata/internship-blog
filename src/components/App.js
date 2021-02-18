@@ -1,12 +1,12 @@
 import '../styles/style.scss';
 import PostList from './PostList';
 import useFetch from './useFetch';
-import {useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Severus from './Severus';
 
 function App() {
 
-  const { data: posts, isLoading } = useFetch('https://blog.kasialaniecka.com/wp-json/wp/v2/posts');
+  const { data: posts, isLoading } = useFetch('https://blog.kattata.online/wp-json/wp/v2/posts');
   const [isOpen, setIsOpen] = useState(false);
 
   // secret video
@@ -16,11 +16,11 @@ function App() {
     window.addEventListener('keyup', (e) => {
       pressed.push(e.key);
       pressed.slice(-secretCode.length - 1, pressed.length - secretCode.length);
-      if(pressed.join('').includes(secretCode)) {
+      if (pressed.join('').includes(secretCode)) {
         setIsOpen(true);
       }
     })
-  },[])
+  }, [])
 
   const hideSeverus = () => {
     setIsOpen(false);
@@ -28,7 +28,7 @@ function App() {
 
   return (
     <div className="App">
-      {isOpen ? <Severus hideSeverus={hideSeverus}/> : null}
+      {isOpen ? <Severus hideSeverus={hideSeverus} /> : null}
       {isLoading && <p className="loading">Posts are coming!</p>}
       {posts && <PostList posts={posts} />}
     </div>
