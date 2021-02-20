@@ -7,13 +7,15 @@
 }
 
 .post-page article {
-  max-width: 1000px;
+  max-width: 800px;
   margin: 10px auto;
   background-color: $beige;
   padding: 40px;
   border: 1px solid $light-brown;
   & img {
     width: 100%;
+    height: 100%;
+    object-fit: covers;
     margin: 20px 0;
   }
   & h1 {
@@ -25,17 +27,24 @@
     font-size: $m;
     margin: 20px 0 10px;
   }
+  & p {
+    margin-bottom: 20px;
+  }
+  & figcaption {
+    text-align: center;
+    font-size: $xs;
+    margin: 0 0 20px;
+    opacity: 0.6;
+    font-style: italic;
+  }
   @include phone {
     padding: 20px;
   }
 }
 
 .intro {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  @include tablet {
-    flex-direction: column;
-    align-items: flex-start;
+  margin-bottom: 20px;
+  & p {
+    margin-top: 5px;
   }
 }
