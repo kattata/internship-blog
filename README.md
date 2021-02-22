@@ -1,3 +1,12 @@
+# Internship Blog
+
+- Individual project
+- Goal: a simple React blog where I track my progress at the internship
+- Stack: React, Wordpress as a headless CMS
+
+## [View Project](https://kasia-internship-blog.netlify.app/)
+<br>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
